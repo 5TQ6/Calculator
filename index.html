@@ -4,36 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" differ></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div id="container">
         <div id="screen">
-            <output type="text" id="input" ></output>
+            <output type="text" name="input" id="input" value="0">0</output>
             <output type="text" id="output"></output>
         </div>
         <div id="buttons">
-            <div class="button sys">AC</div>
-            <div class="button sys">C</div>
-            <div class="button operator">%</div>
-            <div class="button operator">-</div>
-            <div class="button digits">7</div>
-            <div class="button digits">8</div>
-            <div class="button digits">9</div>
-            <div class="button operator">+</div>
-            <div class="button digits">4</div>
-            <div class="button digits">5</div>
-            <div class="button digits">6</div>
-            <div class="button operator">×</div>
-            <div class="button digits">1</div>
-            <div class="button digits">2</div>
-            <div class="button digits">3</div>
-            <div class="button operator">÷</div>
-            <div class="button digits">0</div>
-            <div class="button digits">.</div>
-            <div class="button" id="equal">=</div>
+
+            <button class="button sys" onclick="clearDisplay()">AC</button>
+            <button class="button sys" onclick="backspace()">C</button>
+            <button class="button operator" onclick="showDisplay('%')">%</button>
+            <button class="button operator" onclick="showDisplay('-')">-</button>
+            <button class="button digits" onclick="showDisplay('7')">7</button>
+            <button class="button digits" onclick="showDisplay('8')">8</button>
+            <button class="button digits" onclick="showDisplay('9')">9</button>
+            <button class="button operator" onclick="showDisplay('+')">+</button>
+            <button class="button digits" onclick="showDisplay('4')">4</button>
+            <button class="button digits" onclick="showDisplay('5')">5</button>
+            <button class="button digits" onclick="showDisplay('6')">6</button>
+            <button class="button operator" onclick="showDisplay('×')">×</button>
+            <button class="button digits" onclick="showDisplay('1')">1</button>
+            <button class="button digits" onclick="showDisplay('2')">2</button>
+            <button class="button digits" onclick="showDisplay('3')">3</button>
+            <button class="button operator" onclick="showDisplay('÷')">÷</button>
+            <button class="button digits" onclick="showDisplay('0')">0</button>
+            <button class="button digits" onclick="showDisplay('.')">.</button>
+            <button class="button" id="equal">=</button>
+            
         </div>
     </div>
     <footer> <a href="https://github.com/5TQ6" target="_blank" id="github">Hema Ali</a> © 2022</footer>
